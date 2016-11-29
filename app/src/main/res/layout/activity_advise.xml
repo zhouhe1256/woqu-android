@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color">
+
+    <com.bjcathay.woqu.view.TopView
+        android:id="@+id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/viewline"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/advise_edit"
+        android:inputType="textMultiLine"
+        android:cursorVisible="true"
+        android:gravity="top"
+        android:hint="@string/advise_hint_text"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:textSize="@dimen/user_textSize_small"
+        android:textColorHint="@color/advise_text"
+        android:layout_gravity="center_horizontal" />
+<!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联系方式"
+        android:id="@+id/textView11" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/phone_edit" />-->
+
+   <!-- <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:id="@+id/commit_bt"
+        android:onClick="onClick"
+        android:layout_gravity="center_horizontal" />-->
+
+</LinearLayout>

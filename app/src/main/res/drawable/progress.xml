@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@android:id/progress"
+        android:drawable="@drawable/ic_pregress_red"
+        >
+        <clip>
+            <shape android:shape="rectangle">
+                <corners android:radius="50dp" />
+                <!--<solid  android:color="@color/viewline"/>-->
+
+                <!--<gradient-->
+                    <!--android:angle="270.0"-->
+                    <!--android:centerColor="@color/theme_color"-->
+                    <!--android:endColor="@color/theme_color"-->
+                    <!--android:startColor="@color/theme_color"-->
+                    <!--/>-->
+            </shape>
+        </clip>
+    </item>
+</layer-list>

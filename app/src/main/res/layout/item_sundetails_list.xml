@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:id="@+id/xiaoxi"
+            android:layout_width="11dp"
+            android:layout_height="11dp"
+            android:src="@drawable/xiaoxi"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            />
+
+        <com.bjcathay.woqu.view.RoundCornerImageView
+            android:id="@+id/sunaward_details_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@color/gray_color"
+            android:layout_marginLeft="10dp"
+            />
+        <LinearLayout
+            android:layout_alignLeft="@+id/sunaward_details_image"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/sunaward_details_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/user_textcolor_d"
+                android:textSize="14sp"
+                android:text="小喔"
+                />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            >
+            <TextView
+                android:id="@+id/sunaward_details_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昨天 07:53"
+                android:textColor="@color/user_textcolor_t"
+                android:textSize="12sp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/sunaward_details_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:textColor="@color/user_textcolor_d"
+            android:text="看着还不错哦"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/viewline"/>
+</LinearLayout>

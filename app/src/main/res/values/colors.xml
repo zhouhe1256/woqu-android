@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="holo_blue">#FF33E5B5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_t">#e8ecef</color>
+    <color name="divider_list">#cccccc</color>
+    <color name="grid_state_pressed">#1Affffff</color>
+    <color name="red">#FF0033</color>
+    <color name="blue">#277FF4</color>
+    <color name="whites">#ffffff</color>
+    <color name="gray">#AFAFAF</color>
+    <color name="yellow">#F99503</color>
+    <color name="gray_color">#ffe8ecef</color>
+    <color name="bg_sort_color">#EDEDED</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="home_event_color">#FFAC41</color>
+    <color name="home_event_press_color">#fc9549</color>
+    <color name="home_order_color">#20D8DA</color>
+    <color name="home_order_press_color">#1ec2c4</color>
+    <color name="home_exchange_color">#FF7373</color>
+    <color name="home_exchange_press_color">#fe6464</color>
+    <color name="home_my_color">#1AB5FF</color>
+    <color name="home_my_press_color">#179ddd</color>
+    <color name="home_back_color">#8490ff</color>
+    <color name="home_back_press_color">#9990ff</color>
+    <color name="home_title_color">#1FBA5E</color>
+    <color name="order_title_color">#1EB95D</color>
+    <color name="order_price_color">#F39C11</color>
+    <color name="login_color">#4CC67D</color>
+    <color name="user_center_bg">#EEEEEE</color>
+    <color name="home_share_bg">#49dc62</color>
+    <color name="home_share_press_bg">#8bcb72</color>
+    <color name="line_color">#D3D3D3</color>
+    <color name="guolinbi_color">#f39c11</color>
+    <color name="exchange_text_color">#8c8c8c</color>
+    <color name="main_text_color">#3c3c3c</color>
+    <color name="transparent_color">#f1f1f1</color>
+    <color name="tuangou_color">#a165d4</color>
+    <color name="unselect_color">#40BA5D</color>
+    <color name="yellow_bg_color">#F19B11</color>
+    <color name="fanxian_color">#5895fb</color>
+    <color name="price_bg">#e95a34</color>
+    <color name="red_">#fa383b</color>
+    <color name="event_title_img_color">#dcdcdc</color>
+    <color name="money_text_color">#F39C11</color>
+
+    <!--  字体色值 #323232
+      #646464
+      #969696
+      可点击文文字 可点击文字 #4A90E2
+      可用按钮背景
+      可用按钮背景
+      不可用按钮背景
+      已点击浮窗
+      #FC4A5B
+      #655784
+      #E6E6E6
+      #C8C8C8
+      间隔线 #C8C8C8
+      背景色 #F5F5F5
+      主题色
+      #FC4A5B
+       -->
+    <color name="sold_out_color">#BBBBBB</color>
+    <color name="background_color">#F5F5F5</color>
+    <color name="wheel_time_btn_nor">#54a3fa</color>
+    <color name="wheel_time_btn_pre">#CCCCCC</color>
+    <color name="city_color">#f9f9f9</color>
+    <color name="theme_color">#FC4A5B</color>
+    <color name="theme_color_t">#CF3947</color>
+    <color name="user_textcolor_d">#323232</color>
+    <color name="user_textcolor_m">#646464</color>
+    <color name="user_textcolor_t">#969696</color>
+    <color name="viewline">#C8C8C8</color>
+    <color name="click_text">#4A90E2</color>
+    <color name="change_pwd_text">#4A4A4A</color>
+    <color name="advise_text">#9B9B9B</color>
+
+
+    <color name="woqu_campagin_going">#FC4A5B</color>
+    <color name="woqu_campagin_going_text">#323232</color>
+    <color name="woqu_campagin_rule_text">#646464</color>
+    <color name="woqu_campagin_tip_text">#4A90E2</color>
+    <color name="sub_textcolor">#9B9B9B</color>
+    <color name="main_textcolor">#646464</color>
+    <color name="title_line">#c8c8c8</color>
+    <color name="price_note_color">#323232</color>
+    <color name="price_color">#fc4a5b</color>
+    <color name="go_to_shopp_color">#4a90e2</color>
+    <color name="blue_btn_color">#655784</color>
+    <color name="blue_btn_color_t">#382A5A</color>
+    <color name="red_btn_color">#FC4A5B</color>
+    <color name="address_color">#4a4a4a</color>
+    <color name="expre_color">#969696</color>
+    <color name="bg_color">#F5F5F5</color>
+
+    <color name="radio_check_color">#FC4A5B</color>
+    <color name="radio_color">#666666</color>
+    <color name="address_textcolor">#9B9B9B</color>
+    <color name="wish_text">#C8C8C8</color>
+    <color name="woqu_text_status">#323232</color>
+    <color name="purple">#9C27B0</color>
+    <color name="trans_black_75">#BF000000</color>
+
+    <color name="trans_black_50">#80000000</color>
+
+    <color name="trans_black_25">#40000000</color>
+</resources>
+

@@ -1,0 +1,60 @@
+<com.bjcathay.woqu.view.PullToRefreshView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_pull_refresh_view"
+    android:orientation="vertical"
+    tools:context="com.bjcathay.woqu.activity.WoQuActivity">
+    <ScrollView
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+        <com.bjcathay.woqu.view.JazzyViewPager
+            android:id="@+id/jazzy_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:id="@+id/doto_main_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/jazzy_viewpager"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"></LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="19"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        >
+    <com.bjcathay.woqu.view.ScrollViewWithListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:id="@+id/bj_woqu_list"
+        />
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</com.bjcathay.woqu.view.PullToRefreshView>

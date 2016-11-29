@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">喔去</string>
+
+    <!--开发-->
+    <!--<string name="host">http://192.168.1.22:8085</string>-->
+    <!--<string name="img_host">http://192.168.1.22:8085</string>-->
+    <!--<string name="pay_notify_url">http://192.168.1.22:8085/api/alipay_notify_url</string>-->
+
+    <!--临时-->
+    <!--<string name="host">http://api0.bjcathay.com:81</string>-->
+    <!--<string name="img_host">http://api0.bjcathay.com:81</string>-->
+    <!--<string name="pay_notify_url">http://api0.bjcathay.com:81/api/alipay_notify_url</string>-->
+
+    <!--生产-->
+    <string name="host">http://www.wwoqu.com</string>
+    <string name="img_host">http://www.wwoqu.com</string>
+    <string name="pay_notify_url">http://www.wwoqu.com/api/alipay_notify_url</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="empty_net_text">无网络，请您检查网络链接后重试</string>
+    <string name="clean_dialog_text">确定删除所有缓存？</string>
+    <string name="update_dialog_text">发现新版本，去更新？</string>
+    <string name="update_note_message">\n您所使用的“喔去”版本过低，建议您升级到最新版本！</string>
+    <string name="name_empty">收货人不能为空</string>
+    <string name="phone_empty">手机号不能为空</string>
+    <string name="phone_check">请填写正确的手机号码</string>
+    <string name="postcode_empty">邮政编码不能为空</string>
+    <string name="postcode_check">邮政编码必须为6位</string>
+    <string name="area_empty">所在地址不能为空</string>
+    <string name="detailaddress_empty">详细地址不能为空</string>
+    <string name="title_activity_wo_qu">WoQuActivity</string>
+    <string name="title_activity_point_praise">PointPraiseActivity</string>
+    <string name="title_activity_point_praise_end">PointPraiseEndActivity</string>
+    <string name="title_activity_no_beginning">NoBeginningActivity</string>
+    <string name="title_activity_wish">WishActivity</string>
+    <string name="title_activity_wish_details">WishDetailsActivity</string>
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+    <string name="title_activity_sun_award_details">SunAwardDetailsActivity</string>
+    <string name="title_activity_comment">CommentActivity</string>
+    <string name="title_activity_user_center">UserCenterActivity</string>
+    <string name="title_activity_user_data">UserDataActivity</string>
+
+
+    <!-- 自定义组件 -->
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">松开可以刷新</string>
+    <string name="lastUpdateTime">最近更新：%s</string>
+    <string name="load_full">已加载全部</string>
+    <string name="no_data">暂无数据</string>
+    <string name="more">加载中</string>
+    <string name="d">图片描述</string>
+    <string name="title_activity_smooth_image">SmoothImageActivity</string>
+    <!--瀑布流-->
+    <dimen name="woqu_gift_icon">11dp</dimen>
+    <dimen name="woqu_campagin_going_height">44dp</dimen>
+    <dimen name="title_icon_height">15dp</dimen>
+    <dimen name="title_icon_width">4dp</dimen>
+    <string name="empty_free_gift_text">赶紧去参加活动夺取宝贝吧!</string>
+    <string name="title_activity_winner">WinnerActivity</string>
+    <string name="auth_cancel">授权操作已取消</string>
+    <string name="auth_error">授权操作遇到错误，请阅读Logcat输出; \n 如微信登录，需要微信客户端</string>
+    <string name="auth_complete">授权成功，正在跳转登录操作…</string>
+    <string name="advise_hint_text">来吐槽一下喔去吧...我们会不断优化体验的，谢谢！</string>
+    <string name="delete_address_text">您确定要删除?</string>
+    <string name="empty_free_message_text">快活跃起来吧,骚年!</string>
+    <string name="empty_free_order_text">啊欧,暂时没有订单呢!</string>
+    <string name="service_terms_text">我已阅读并同意服务条款及隐私规则</string>
+    <string name="empty_free_involved">快活跃起来吧,骚年!</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+</resources>

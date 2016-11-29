@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:id="@+id/published_linear"
+    >
+
+    <com.bjcathay.woqu.view.TopView
+        android:id="@+id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_line"/>
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="60dp"-->
+    <!--android:background="@color/white" >-->
+    <!--<ImageView-->
+    <!--android:id="@+id/title_back_img"-->
+    <!--android:layout_width="37dp"-->
+    <!--android:layout_height="46dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="7dp"-->
+    <!--android:padding="12dp"-->
+    <!--android:src="@drawable/ic_title_back"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:text="晒单"-->
+    <!--android:textColor="#969696"-->
+    <!--android:textSize="20dp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/activity_selectimg_send"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginRight="8dp"-->
+    <!--android:gravity="center"-->
+    <!--android:text="发布"-->
+    <!--android:textColor="@drawable/text_while"-->
+    <!--android:textSize="14dp" />-->
+    <!--</RelativeLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+
+        android:background="@color/white">
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:gravity="left|top"
+            android:hint="超幸运,我中奖啦..."
+            android:background="@null"
+            android:textColor="@color/user_textcolor_t"
+            android:textSize="14sp"
+            android:layout_above="@+id/linearLayout">
+        </EditText>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/linearLayout">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:background="@drawable/address_solid_bg"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+
+                >
+                <ImageView
+                    android:id="@+id/address_image"
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:src="@drawable/address"
+                    android:layout_gravity="center"
+
+                    />
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/radio_color"
+                    android:text="显示位置"
+                    />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/address_dele"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:src="@drawable/bt_dele"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/noScrollgridview"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:horizontalSpacing="5dp"
+        android:listSelector="@drawable/item_click"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp" >
+    </GridView>
+
+</LinearLayout>

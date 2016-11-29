@@ -1,0 +1,147 @@
+package com.bjcathay.woqu.activity;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.GridView;
+import android.widget.TextView;
+
+import com.bjcathay.woqu.R;
+import com.bjcathay.woqu.adapter.ImageBucketAdapter;
+import com.bjcathay.woqu.model.ImageBucket;
+import com.bjcathay.woqu.util.AlbumHelper;
+import com.bjcathay.woqu.util.ViewUtil;
+import com.bjcathay.woqu.view.TopView;
+import com.umeng.analytics.MobclickAgent;
+
+import java.io.Serializable;
+import java.util.List;
+
+public class SelectPicActivity extends Activity implements View.OnClickListener{
+	// ArrayList<Entity> dataList;//用来装载数据源的列表
+	List<ImageBucket> dataList;
+	GridView gridView;
+	ImageBucketAdapter adapter;// 自定义的适配器
+	AlbumHelper helper;
+	public static final String EXTRA_IMAGE_LIST = "imagelist";
+	public static Bitmap bimap;
+	private String content;
+	private TopView topView;
+	private String imageId;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_image_bucket);
+
+		helper = AlbumHelper.getHelper();
+		helper.init(getApplicationContext());
+
+		initData();
+		initView();
+		setListeners();
+	}
+
+	private void setListeners() {
+
+	}
+
+	@Override
+	public void onBackPressed() {
+		super.onBackPressed();
+		finish();
+	}
+
+	@Override
+	public void onClick(View v) {
+		switch (v.getId()){
+			case R.id.title_back_img:
+				finish();
+				break;
+		}
+	}
+
+	/**
+	 * 初始化数据
+	 */
+	private void initData() {
+		// /**
+		// * 这里，我们假设已经从网络或者本地解析好了数据，所以直接在这里模拟了10个实体类，直接装进列表中
+		// */
+		// dataList = new ArrayList<Entity>();
+		// for(int i=-0;i<10;i++){
+		// Entity entity = new Entity(R.drawable.picture, false);
+		// dataList.add(entity);
+		// }
+		dataList = helper.getImagesBucketList(false);	
+		bimap= BitmapFactory.decodeResource(
+				getResources(),
+				R.drawable.icon_addpic_unfocused);
+		imageId=getIntent().getStringExtra("imageId");
+	}
+
+	/**
+	 * 初始化view视图
+	 */
+	private void initView() {
+		topView= ViewUtil.findViewById(this, R.id.top_title);
+		topView.setTitleBackVisiable();
+		topView.setTitleText("相册");
+		content = getIntent().getStringExtra("content");
+		gridView = (GridView) findViewById(R.id.gridview);
+		adapter = new ImageBucketAdapter(SelectPicActivity.this, dataList);
+		gridView.setAdapter(adapter);
+
+		gridView.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				/**
+				 * 根据position参数，可以获得跟GridView的子View相绑定的实体类，然后根据它的isSelected状态，
+				 * 来判断是否显示选中效果。 至于选中效果的规则，下面适配器的代码中会有说明
+				 */
+				// if(dataList.get(position).isSelected()){
+				// dataList.get(position).setSelected(false);
+				// }else{
+				// dataList.get(position).setSelected(true);
+				// }
+
+
+
+				/**
+				 * 通知适配器，绑定的数据发生了改变，应当刷新视图
+				 */
+				// adapter.notifyDataSetChanged();
+				Intent intent = new Intent(SelectPicActivity.this,
+						ImageGridActivity.class);
+				intent.putExtra("content",content);
+				intent.putExtra("imageId",imageId);
+			//	intent.setType("image/*");
+				intent.putExtra(SelectPicActivity.EXTRA_IMAGE_LIST,
+						(Serializable) dataList.get(position).imageList);
+				startActivity(intent);
+				finish();
+			}
+
+		});
+	}
+	@Override
+	public void onResume() {
+		super.onResume();
+		MobclickAgent.onPageStart("相册界面");
+		MobclickAgent.onResume(this);
+	}
+
+	@Override
+	public void onPause() {
+		super.onPause();
+		MobclickAgent.onPageEnd("相册界面");
+		MobclickAgent.onPause(this);
+	}
+}

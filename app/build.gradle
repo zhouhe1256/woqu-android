@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+
+    defaultConfig {
+        applicationId "com.bjcathay.woqu"
+        minSdkVersion 14
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+        manifestPlaceholders = [CHANNEL_NAME: "A0000"]
+    }
+    signingConfigs {
+        release {
+            storeFile file('keystore/woqu')
+            storePassword 'bjcathay2307woqu'
+            keyAlias 'woqu'
+            keyPassword 'bjcathay2307woqu'
+        }
+        debug {
+            storeFile file('keystore/woqu')
+            storePassword 'bjcathay2307woqu'
+            keyAlias 'woqu'
+            keyPassword 'bjcathay2307woqu'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    productFlavors {
+        A0000 {}
+        A0001 {}
+        A0002 {}
+        A0003 {}
+        A0004 {}
+        A0005 {}
+        A0006 {}
+        A0007 {}
+        A0008 {}
+        A0009 {}
+        A0010 {}
+
+        productFlavors.all { flavor ->
+            flavor.manifestPlaceholders = [CHANNEL_NAME: name]
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.bjcathay:android:0.0.7'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile files('libs/GetuiSdk2.6.1.0.jar')
+    compile files('libs/GetuiExt-2.0.3.jar')
+    compile files('libs/httpmime-4.1.3.jar')
+    compile files('libs/locSDK_6.12.jar')
+    compile files('libs/umeng-analytics-v5.6.1.jar')
+    compile files('libs/MobLogCollector.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/alipaysdk.jar')
+    compile files('libs/ShareSDK-Wechat-2.6.3.jar')
+    compile 'com.android.support:recyclerview-v7:23.0.0'
+    compile files('libs/baidumapapi_search_v3_6_1.jar')
+    compile files('libs/baidumapapi_base_v3_6_1.jar')
+}

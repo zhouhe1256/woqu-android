@@ -1,0 +1,14 @@
+<resources>
+    <declare-styleable name="TimeLineView">
+        <attr name="timeCircleHeadOuterColor" format="color" />
+        <attr name="timelineRadius" format="dimension" />
+        <attr name="timelineHeadRadius" format="dimension" />
+        <attr name="timelineHeadColor" format="color" />
+        <attr name="timelineOtherColor" format="color" />
+        <attr name="timelineRadiusDistance" format="dimension" />
+        <attr name="timelineCount" format="integer" />
+        <attr name="timelineMarginTop" format="dimension" />
+        <attr name="timelineWidth" format="dimension" />
+        <attr name="leftCircleOtherColor" format="dimension" />
+    </declare-styleable>
+</resources>

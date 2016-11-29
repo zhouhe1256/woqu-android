@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        >
+        <TextView
+            android:id="@+id/woqu_winning_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp"
+            android:textColor="@color/user_textcolor_t"
+            android:text="北京"
+            />
+
+        <LinearLayout
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+
+            >
+            <ImageView
+                android:layout_width="8.5dp"
+                android:layout_height="12dp"
+                android:src="@drawable/iphone"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/woqu_winning_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="iphone6"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:textColor="@color/user_textcolor_t"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        <com.bjcathay.woqu.view.RoundCornerImageView
+            android:id="@+id/woqu_winning_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@color/gray_color"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/woqu_winning_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/user_textcolor_d"
+            android:text="明天的小迷糊"
+            />
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

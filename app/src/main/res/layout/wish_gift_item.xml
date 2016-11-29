@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/gift_layout_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:gravity="center_vertical">
+
+        <com.bjcathay.woqu.view.RoundCornerImageView
+            android:id="@+id/wish_fragment_prodouct"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:src="@color/gray_color" />
+        <!--android:background="@drawable/image_stroke_bg"-->
+        <!--android:padding="1dp"-->
+        <LinearLayout
+            android:id="@+id/wish_fragment_l_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <TextView
+                    android:id="@+id/wish_fragment_prodouct_name_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:maxEms="10"
+                    android:textColor="@color/user_textcolor_m"
+                    android:text="啦啦啦" />
+
+                <ImageView
+                    android:id="@+id/wish_fragment_tag_1"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/progress_tag" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                >
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_weight="3"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/progress_bg"
+                    android:progressDrawable="@drawable/progress"
+
+                    />
+
+                <TextView
+                    android:id="@+id/wish_fragment_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="12sp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/user_textcolor_m"
+                    android:text="1106"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color">
+
+    <com.bjcathay.woqu.view.TopView
+        android:id="@+id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号码"
+                android:textSize="15sp"
+                android:textColor="@color/user_textcolor_d"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:id="@+id/phone_num"
+                android:layout_weight="1"
+                android:hint="请输入用户名"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:inputType="number"
+                android:textColor="@color/user_textcolor_t"
+                android:background="@null"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/viewline" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="验证码"
+                android:textSize="15sp"
+                android:textColor="@color/user_textcolor_d"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:id="@+id/validata_code"
+                android:hint="请输入验证码"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:inputType="number"
+                android:textColor="@color/user_textcolor_t"
+                android:background="@null"/>
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="35dp"
+                android:background="@color/viewline"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获取验证码"
+                android:onClick="onClick"
+                android:background="@drawable/item_click"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/user_textcolor_t"
+                android:id="@+id/code_bt" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/viewline" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码"
+                android:textSize="15sp"
+                android:textColor="@color/user_textcolor_d"
+                android:id="@+id/textView3" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:id="@+id/pwd_edit"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:layout_marginLeft="25dp"
+                android:hint="请输入新的密码"
+                android:inputType="textPassword"
+                android:textColor="@color/user_textcolor_t"
+                android:background="@null"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/viewline" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码"
+                android:textSize="15sp"
+                android:textColor="@color/user_textcolor_d"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:id="@+id/confirm_edite"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:layout_marginLeft="25dp"
+                android:hint="请重复新的密码"
+                android:inputType="textPassword"
+                android:textColor="@color/user_textcolor_t"
+                android:background="@null"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/viewline" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_click_red"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:onClick="onClick"
+        android:text="完成"
+        android:id="@+id/finish_bt" />
+
+
+
+</LinearLayout>

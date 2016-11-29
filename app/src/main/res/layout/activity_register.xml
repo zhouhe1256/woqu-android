@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    >
+<com.bjcathay.woqu.view.TopView
+    android:id="@+id/top_title"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:textSize="15sp"
+            android:textColor="@color/user_textcolor_d"
+             />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/phone_edit"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:hint="请输入用户名"
+            android:inputType="number"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/user_textcolor_t"
+            android:background="@null"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/viewline"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码"
+            android:textSize="15sp"
+            android:textColor="@color/user_textcolor_d"
+             />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/code_edit"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:hint="请输入验证码"
+            android:layout_marginLeft="10dp"
+            android:inputType="number"
+            android:textColor="@color/user_textcolor_t"
+            android:background="@null"/>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="35dp"
+            android:background="@color/viewline"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_click"
+            android:layout_marginLeft="10dp"
+            android:text="获取验证码"
+            android:onClick="onClick"
+            android:inputType="number"
+            android:textSize="15sp"
+            android:textColor="@color/user_textcolor_t"
+            android:id="@+id/code_bt" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/viewline"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码"
+            android:textSize="15sp"
+            android:textColor="@color/user_textcolor_d"
+            android:id="@+id/textView3" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/pwd_edit"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:layout_marginLeft="25dp"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:textColor="@color/user_textcolor_t"
+            android:background="@null"/>
+    </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/viewline"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_click_red"
+        android:onClick="onClick"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:text="注册"
+        android:id="@+id/register_bt" />
+
+    <LinearLayout
+        android:id="@+id/clause_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical">
+<!--<LinearLayout-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:orientation="vertical"-->
+    <!--android:onClick="onClick"-->
+    <!--android:id="@+id/checkBox"-->
+    <!--android:gravity="center">-->
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/register_radiobutton_selector"
+        android:checked="true"
+        android:clickable="true"
+        android:layout_gravity="center"
+        android:id="@+id/radioButton" />
+<!--</LinearLayout>-->
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/service_terms_text"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/click_text"
+            android:onClick="onClick"
+            android:id="@+id/clause_text" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
